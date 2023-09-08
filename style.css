@@ -96,6 +96,12 @@ h2{
     padding-left: 5%;
 
 }
+.github{
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border: 2px solid transparent;
+}
 
 /* Media Queries for Mobile and Tablet */
 @media (max-width: 768px) {

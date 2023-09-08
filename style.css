@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0C151D;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 0 20px; 
+}
+
+.info img {
+    width: 192px;
+    height: 192px;
+    flex-shrink: 0;
+    border-radius: 50%; 
+    border: 7px solid #FFE071;
+}
+
+.info h1 {
+    color: #F1F2F4;
+    font-family: Poppins;
+    font-size: 28px; 
+    font-weight: 500;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 20px; 
+}
+
+.day1, .time {
+    width: 50%;
+    height: auto; 
+    border-radius: 20px;
+    background: #171F26;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+    padding-inline: 10px; 
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#day, #utcTime {
+    width: 30%;
+    height: auto; 
+    border-radius: 10px;
+    border: 0px solid #3E64AA;
+    background: #0C151D;
+    padding-inline: 10px;
+    padding-block: 20px; 
+}
+
+.track {
+    border-top: 5px solid white;
+    padding: 20px;
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.track span {
+    border-left: 5px solid #FFE071;
+    margin-left: 5%; 
+    padding-left: 5%;
+
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+    .info img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .day1, .time{
+        width: 70%;
+    }
+
+    #day, #utcTime{
+        font-size: 20px;
+        width: 70%;
+    }
+
+    h2{
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+}
